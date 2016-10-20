@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 输入密码对话框的布局文件 -->
+<LinearLayout
+	android:id="@+id/dialog_input_psd_root"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<EditText
+		android:id="@+id/et_input_password"
+		android:password="true"
+		style="@style/EditTextStyle"
+		/>
+</LinearLayout>

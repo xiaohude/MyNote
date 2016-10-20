@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义我们用的字符串变量,这样比固化到程序中灵活性更高 -->
+<resources>
+
+    <string name="hello">我的便签</string>
+    <string name="app_name">XNote</string>
+    <string name="app_widget2x2">XNote 2x2</string>
+    <string name="app_widget4x4">XNote 4x4</string>
+    <!-- 比较通用的字段 -->
+    <string name="new_note">新建便签</string>
+    <string name="edit_note">编辑便签</string>
+    <string name="delete">删除</string>
+    <string name="delete_note">确定删除便签?</string>
+    <string name="add_shortcut_to_home">添加到桌面</string>
+    <!-- 主界面的菜单 -->
+    <string name="new_folder">新建文件夹</string>
+    <string name="move_to_folder">移进文件夹</string>
+    <string name="export_to_text">输出TXT文本</string>
+    <string name="backup_data">备份数据</string>
+    <string name="restore_data">从SD卡还原</string>
+    <string name="set_password">设置密码</string>
+    <string name="about">关于</string>
+    <!-- 文件夹界面下的菜单 -->
+    <string name="edit_folder_title">修改文件夹名称</string>
+    <string name="move_out_of_folder">移出文件夹</string>
+    <!-- 便签界面下的菜单 -->
+    <string name="alarm_time">设置闹钟</string>
+    <string name="change_font_size">字体大小</string>
+    <string name="share_sms_or_email">分享</string>
+    <string name="share_with_sms">短信</string>
+    <string name="share_with_email">邮箱</string>
+    <!-- Dialog中使用到的字符串 -->
+    <string name="set_alarm_date">设置提醒日期</string>
+    <string name="set_alarm_time">设置提醒时间</string>
+    <!-- Button组件显示 的字符串 -->
+    <string name="Ok">完成</string>
+    <string name="Cancel">取消</string>
+    <!-- 输出TXT文本需要用到的字符串 -->
+    <string name="exportTXTFailed">输出TXT文本失败!</string>
+    <string name="exportTXTSuc">输出TXT文本成功!</string>
+    <!-- 备份数据(XML文件)失败时用到的字符串 -->
+    <string name="backupDataFailed">备份数据失败!</string>
+    <string name="backupDataSuc">备份数据成功!</string>
+    <!-- 密码相关 -->
+    <string name="change_password">修改密码</string>
+    <string name="clear_password">清除密码</string>
+    <string name="password">密码</string>
+    <string name="confirm_psd">确认</string>
+    <string name="change_password_failed">修改密码失败!</string>
+    <string name="change_password_succ">修改密码成功!</string>
+    <string name="set_password_succ">设置密码成功!</string>
+    <string name="set_password_failde">设置密码失败!</string>
+    <!-- 从SDCard还原 -->
+    <string name="restoreDataFailed">还原数据失败!</string>
+    <string name="restoreDataSuc">还原数据成功!</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MainActivity的布局文件 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget46"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/widget35"
+        style="@style/TitleBarLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitleBarTextView"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0" />
+        
+        <ImageView
+            android:text="菜单"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:onClick="OnOpenMenu"
+            android:background="@drawable/ic_menu"
+            android:layout_marginTop="10.0dip"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@style/TitleBarImageButton"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:layout_gravity="top|right|center" />
+    </LinearLayout>
+    <!-- 支持手势操作 -->
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlayView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:eventsInterceptionEnabled="true"
+        android:gestureColor="#ffff00"
+        android:gestureStrokeType="multiple"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:divider="@android:color/transparent"
+            android:fadingEdgeLength="2.0dip"
+            android:listSelector="@android:color/transparent" />
+    </android.gesture.GestureOverlayView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 这个Style用于修饰创建文件夹和输入密码时的EditText -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 首页以及文件夹下标题栏的LinearLayout的Style -->
+    <style name="TitleBarLinearLayout">
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/title_background</item>
+    </style>
+    <!-- 首页及文件夹下标题栏的TextView的Style -->
+    <style name="TitleBarTextView">
+        <item name="android:gravity">top</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#ffead1ae</item>
+        <item name="android:text">@string/hello</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- 首页及文件夹下标题栏的ImageButton的Style -->
+    <style name="TitleBarImageButton">
+        <item name="android:background">@drawable/title_bar_imagebutton_add_note</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+</resources>

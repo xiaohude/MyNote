@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Note信息详细展示页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget40"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:id="@+id/note_detail_header"
+        style="@style/TitleBarLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="26.0dip"
+        android:layout_marginLeft="5.5dp"
+        android:layout_marginRight="5.5dp"
+        android:background="@drawable/notes_header_blue" >
+
+        <TextView
+            android:id="@+id/tv_note_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_weight="1"
+            android:textColor="#66333333"
+            android:textSize="13.0sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_bgcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/bg_color" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/item_light_blue"
+        android:gravity="top|left"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#ff4b4b4b"
+        android:textSize="20.0sp" />
+
+</LinearLayout>

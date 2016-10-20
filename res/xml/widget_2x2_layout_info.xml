@@ -1,0 +1,9 @@
+<appwidget-provider 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="146dp"
+    android:minHeight="146dp"
+    android:initialLayout="@layout/widget_2x2_layout"
+    android:configure="com.xnote.widget.ConfigurationActivity_2X2"
+    >
+</appwidget-provider>
+<!-- 它负责对新建的AppWidget(2X2)进行简单的设定 -->

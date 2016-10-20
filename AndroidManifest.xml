@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xnote.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="11" />
+    <!-- 唤醒屏幕并解锁 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 取得向SDCard写文件的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 发送到桌面需要的权限(shortcut) -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 发送短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 声明Activity中intent-filter中action属性是创建快捷方式的需要 -->
+        <activity android:name="com.xnote.activity.FolderNotesActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xnote.activity.NoteActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xnote.activity.MoveToFolderActivity" />
+        <activity android:name="com.xnote.activity.DeleteRecordsActivity" />
+        <activity android:name="com.xnote.activity.MoveOutOfFolderActivity" />
+        <!-- 数据库操作相关 -->
+        <provider
+            android:name="com.xnote.database.DbInfoProvider"
+            android:authorities="com.xnote.provider.DbInfo" >
+        </provider>
+        <!-- 设置提醒相关 -->
+        <receiver android:name="com.xnote.alarm.AlarmReceiver" />
+        <!-- 有关Widget(2X2)的声明 -->
+        <receiver
+            android:name="com.xnote.widget.NoteWidget_2X2"
+            android:label="@string/app_widget2x2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2x2_layout_info" />
+        </receiver>
+        <!-- 有关Widget(4X4)的声明 -->
+        <receiver
+            android:name="com.xnote.widget.NoteWidget_4X4"
+            android:label="@string/app_widget4x4" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x4_layout_info" />
+        </receiver>
+
+        <!-- 初次创建Widget2X2时会调用ConfigurationActivity_2X2 -->
+        <activity android:name="com.xnote.widget.ConfigurationActivity_2X2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <!-- 初次创建Widget4X4时会调用ConfigurationActivity_4X4 -->
+        <activity android:name="com.xnote.widget.ConfigurationActivity_4X4" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- EditWidgetNoteActivity 用于编辑AppWidget中的内容 -->
+        <!-- 设置android:launchMode来控制程序的task和back stack -->
+        <activity
+            android:name="com.xnote.widget.EditWidgetNoteActivity"
+            android:launchMode="singleInstance" />
+    </application>
+
+</manifest>

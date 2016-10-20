@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 移进移出文件夹和删除记录的界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget4646"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/widget3535"
+        style="@style/TitleBarLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvTitle_move_to_folder"
+            style="@style/TitleBarTextView"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0" />
+
+        <ImageButton
+            android:id="@+id/ib_move_to_folder"
+            style="@style/TitleBarImageButton"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:layout_gravity="top|right|center"
+            android:layout_marginTop="1.0dip"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:fadingEdgeLength="2.0dip"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/buttons_background" >
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|left|center"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginLeft="7.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/delete_records_ok_xml"
+            android:text="@string/Ok"
+            android:textColor="#cc000000"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/btnCancelDel"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_gravity="bottom|right|center"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/delete_records_cancel_xml"
+            android:text="@string/Cancel"
+            android:textColor="#cc000000"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

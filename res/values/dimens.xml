@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- app widgets should define padding between the widget frame and the app widget's bounding box to provide better alignment with other widgets and icons on the user's home screen. -->
+    <dimen name="widget_margin">15dp</dimen>
+
+</resources>

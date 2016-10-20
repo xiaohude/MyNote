@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Appwidget的背景通过设置ImageView的背景来实现的,因此使用FrameLayout -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_2x2"
+    android:layout_width="146.0dip"
+    android:layout_height="146.0dip" >
+
+    <ImageView
+        android:id="@+id/widget_2x2_imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/widget_2x2_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="6"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="20.0dip"
+        android:textColor="#ff663300"
+        android:textSize="14.0sp" />
+
+</FrameLayout>
