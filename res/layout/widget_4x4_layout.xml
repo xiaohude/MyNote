@@ -8,8 +8,7 @@
     <ImageView
         android:id="@+id/widget_4x4_imageView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/border_background" />
+        android:layout_height="fill_parent" />
 
     <TextView
         android:id="@+id/widget_4x4_textView"
