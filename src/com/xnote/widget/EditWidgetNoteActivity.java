@@ -162,6 +162,7 @@ public class EditWidgetNoteActivity extends Activity {
 			String content = c.getString(c
 					.getColumnIndex(AppwidgetItems.CONTENT));
 			et_content.setText(content);
+			et_content.setSelection(content.length());
 			// 根据数据库中的值设定背景颜色(该值是桌面widget背景图片的值)
 			mBackgroud_Color = c.getInt(c
 					.getColumnIndex(AppwidgetItems.BACKGROUND_COLOR));
